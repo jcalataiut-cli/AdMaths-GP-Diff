@@ -1,0 +1,111 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Ho2020DDPM}
+\citation{TMDM}
+\citation{NSDiff}
+\citation{ARMD}
+\citation{Alcaraz2022SSSD}
+\citation{Kendall2017}
+\citation{Su2025Survey}
+\citation{Rasmussen2006GP}
+\citation{Neal1996Priors,Lee2018NNGP}
+\citation{Jacot2018NTK}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Ho2020DDPM}
+\citation{Song2020SDE}
+\citation{ARMD}
+\citation{TMDM}
+\citation{NSDiff}
+\citation{Alcaraz2022SSSD}
+\citation{Su2025Survey}
+\citation{Rasmussen2006GP}
+\citation{Neal1996Priors,Lee2018NNGP}
+\citation{Jacot2018NTK}
+\citation{Xiao2019WeightShare}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {I-A}}Contributions}{2}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Denoising Diffusion Probabilistic Models}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:ddpm_marginal}{{2}{2}{Denoising Diffusion Probabilistic Models}{equation.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Diffusion Models for Time Series}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Gaussian Processes and Neural Network Limits}{2}{subsection.2.3}\protected@file@percent }
+\newlabel{eq:gp_mean}{{4}{2}{Gaussian Processes and Neural Network Limits}{equation.2.4}{}}
+\newlabel{eq:gp_cov}{{5}{2}{Gaussian Processes and Neural Network Limits}{equation.2.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}GP-Diff Framework}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Motivation and Design Principles}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}GP-Guided Forward Process}{3}{subsection.3.2}\protected@file@percent }
+\newlabel{eq:forward_gp}{{6}{3}{GP-Guided Forward Process}{equation.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Theorem 1: GP-Score Decomposition}{3}{subsection.3.3}\protected@file@percent }
+\newlabel{thm:score}{{1}{3}{GP-Score Decomposition}{theorem.1}{}}
+\newlabel{eq:score_decomp}{{8}{3}{GP-Score Decomposition}{equation.3.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Theorem 2: Analytic Noise Prediction}{3}{subsection.3.4}\protected@file@percent }
+\newlabel{thm:noise}{{2}{3}{Analytic Noise Prediction}{theorem.2}{}}
+\newlabel{eq:noise_pred}{{11}{3}{Analytic Noise Prediction}{equation.3.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Theorem 3: GP-CPS Kernel Structure}{3}{subsection.3.5}\protected@file@percent }
+\newlabel{thm:kernel}{{3}{3}{GP-CPS Kernel Structure}{theorem.3}{}}
+\newlabel{eq:cps_kernel}{{14}{3}{GP-CPS Kernel Structure}{equation.3.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-F}}Theorem 4: Total Uncertainty Decomposition}{3}{subsection.3.6}\protected@file@percent }
+\newlabel{thm:uncertainty}{{4}{3}{Total Uncertainty Decomposition}{theorem.4}{}}
+\newlabel{eq:uncertainty}{{19}{3}{Total Uncertainty Decomposition}{equation.3.19}{}}
+\citation{Snelson2006Sparse}
+\citation{Lee2018NNGP}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces GP prior with GP-CPS kernel on damped oscillator data. The kernel captures smooth evolution, periodicity, and controlled smoothness through its four-component structure.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:gp_prior}{{1}{4}{GP prior with GP-CPS kernel on damped oscillator data. The kernel captures smooth evolution, periodicity, and controlled smoothness through its four-component structure}{figure.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces GP-Diff Training Procedure}}{4}{algorithm.1}\protected@file@percent }
+\newlabel{alg:training}{{1}{4}{Diffusion Pipeline}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Architecture and Training}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Model Components}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {IV-A}0a}GP Prior Module}{4}{paragraph.4.1.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {IV-A}0b}Correction Network $\delta _\theta $}{4}{paragraph.4.1.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\numberline {\mbox  {IV-A}0c}Diffusion Pipeline}{4}{paragraph.4.1.0.3}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces GP-Diff Sampling Procedure}}{4}{algorithm.2}\protected@file@percent }
+\newlabel{alg:sampling}{{2}{4}{Diffusion Pipeline}{algorithm.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Benchmark results on synthetic CPS data. Metrics averaged over 10 test trajectories with standard deviations.}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:benchmark}{{I}{4}{Benchmark results on synthetic CPS data. Metrics averaged over 10 test trajectories with standard deviations}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Connection to Neural Network Gaussian Processes}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experiments}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Experimental Setup}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Main Results}{4}{subsection.5.2}\protected@file@percent }
+\citation{Gneiting2007}
+\citation{Gneiting2007}
+\citation{Snelson2006Sparse}
+\citation{Su2025Survey}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Ablation Study}{5}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Model complexity comparison. GP-Diff achieves $9\times $ parameter reduction by delegating score computation to the analytic GP term.}}{5}{figure.2}\protected@file@percent }
+\newlabel{fig:params}{{2}{5}{Model complexity comparison. GP-Diff achieves $9\times $ parameter reduction by delegating score computation to the analytic GP term}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Qualitative comparison on a held-out test trajectory. Left: GP-only prediction with 95\% CI. Center: GP-Diff samples (red, 20 trajectories). Right: Standard DDPM samples (green, 20 trajectories). Ground truth shown in black.}}{5}{figure.3}\protected@file@percent }
+\newlabel{fig:samples}{{3}{5}{Qualitative comparison on a held-out test trajectory. Left: GP-only prediction with 95\% CI. Center: GP-Diff samples (red, 20 trajectories). Right: Standard DDPM samples (green, 20 trajectories). Ground truth shown in black}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Discussion}{5}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Limitations}{5}{subsection.6.1}\protected@file@percent }
+\citation{Ho2020DDPM}
+\citation{TMDM}
+\citation{NSDiff}
+\citation{ARMD}
+\citation{Alcaraz2022SSSD}
+\bibcite{Ho2020DDPM}{1}
+\bibcite{Song2020SDE}{2}
+\bibcite{Rasmussen2006GP}{3}
+\bibcite{Neal1996Priors}{4}
+\bibcite{Lee2018NNGP}{5}
+\bibcite{Jacot2018NTK}{6}
+\bibcite{Kendall2017}{7}
+\bibcite{Su2025Survey}{8}
+\bibcite{TMDM}{9}
+\bibcite{NSDiff}{10}
+\bibcite{ARMD}{11}
+\bibcite{Alcaraz2022SSSD}{12}
+\bibcite{Snelson2006Sparse}{13}
+\bibcite{Xiao2019WeightShare}{14}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training loss of the correction network $\delta _\theta $ over 2000 epochs with cosine annealing learning rate schedule. The oscillatory behavior reflects the scheduler's reset period.}}{6}{figure.4}\protected@file@percent }
+\newlabel{fig:loss}{{4}{6}{Training loss of the correction network $\delta _\theta $ over 2000 epochs with cosine annealing learning rate schedule. The oscillatory behavior reflects the scheduler's reset period}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces GP-guided forward process at different timesteps $t \in \{0, 20, 50, 80, 99\}$. As $t \to T$, trajectories converge to $\mathcal  {N}(\mu _{GP}, \Sigma _{GP})$ (green, bottom-right).}}{6}{figure.5}\protected@file@percent }
+\newlabel{fig:forward}{{5}{6}{GP-guided forward process at different timesteps $t \in \{0, 20, 50, 80, 99\}$. As $t \to T$, trajectories converge to $\mathcal {N}(\mu _{GP}, \Sigma _{GP})$ (green, bottom-right)}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Taxonomic Positioning}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Future Work}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Taxonomic comparison of GP-Diff with existing diffusion models for time series.}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:comparison}{{II}{6}{Taxonomic comparison of GP-Diff with existing diffusion models for time series}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{6}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{6}{section*.1}\protected@file@percent }
+\bibcite{Gneiting2007}{15}
+\gdef \@abspage@last{7}
